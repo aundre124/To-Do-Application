@@ -38,6 +38,9 @@ app.post('/add', (req, res) => {
     // set public, if private not set
     if (!data.private)
         data.private = false
+    //set not completed, if complete not set
+    if (!data.complete)
+        data.complete = false
     // validate due date, if empty set next day
     if (!data.dueDate)
         data.dueDate = format(addDays(Date.now(), 1), "yyyy-MM-dd")

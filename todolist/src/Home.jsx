@@ -43,8 +43,6 @@ function Home() {
                 <div className='flex justify-between text-xs text-gray-500 items-center'>
                   {todo.dueDate}
                   <div>
-                    <i className="bi bi-eye-fill cursor-pointer ms-3 hover:text-black"></i>
-                    <i className="bi bi-pencil-fill cursor-pointer ms-3 hover:text-black"></i>
                     <i className="bi bi-trash3-fill cursor-pointer ms-3 hover:text-black" onClick={() => handleDelete(todo._id)}></i>
                   </div>
                 </div>
