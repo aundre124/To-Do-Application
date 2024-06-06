@@ -10,8 +10,8 @@ function App() {
     <div className='flex justify-center'>
     <Routes>
       <Route path="/" element={<Login/>}/>
-      {/* <Route path="/view" element={<Home/>} /> */}
       <Route path="/add" element={<Home/>} />
+      {/* <Route path="/update/:id" element={<Update />} /> */}
     </Routes>
     </div>
     </>
